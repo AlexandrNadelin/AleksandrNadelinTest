@@ -30,10 +30,10 @@
         {
             this.buttonAddDepartment = new System.Windows.Forms.Button();
             this.textBoxDepartmentName = new System.Windows.Forms.TextBox();
-            this.textBoxParentDepartmentName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonCansel = new System.Windows.Forms.Button();
+            this.comboBoxParentDepartmentName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonAddDepartment
@@ -54,14 +54,6 @@
             this.textBoxDepartmentName.Name = "textBoxDepartmentName";
             this.textBoxDepartmentName.Size = new System.Drawing.Size(323, 26);
             this.textBoxDepartmentName.TabIndex = 3;
-            // 
-            // textBoxParentDepartmentName
-            // 
-            this.textBoxParentDepartmentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxParentDepartmentName.Location = new System.Drawing.Point(12, 125);
-            this.textBoxParentDepartmentName.Name = "textBoxParentDepartmentName";
-            this.textBoxParentDepartmentName.Size = new System.Drawing.Size(323, 26);
-            this.textBoxParentDepartmentName.TabIndex = 4;
             // 
             // label1
             // 
@@ -94,6 +86,15 @@
             this.buttonCansel.UseVisualStyleBackColor = true;
             this.buttonCansel.Click += new System.EventHandler(this.buttonCansel_Click);
             // 
+            // comboBoxParentDepartmentName
+            // 
+            this.comboBoxParentDepartmentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxParentDepartmentName.FormattingEnabled = true;
+            this.comboBoxParentDepartmentName.Location = new System.Drawing.Point(12, 130);
+            this.comboBoxParentDepartmentName.Name = "comboBoxParentDepartmentName";
+            this.comboBoxParentDepartmentName.Size = new System.Drawing.Size(322, 28);
+            this.comboBoxParentDepartmentName.TabIndex = 8;
+            // 
             // FormAddDepartment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,12 +102,14 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(344, 232);
             this.ControlBox = false;
+            this.Controls.Add(this.comboBoxParentDepartmentName);
             this.Controls.Add(this.buttonCansel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxParentDepartmentName);
             this.Controls.Add(this.textBoxDepartmentName);
             this.Controls.Add(this.buttonAddDepartment);
+            this.MaximumSize = new System.Drawing.Size(360, 270);
+            this.MinimumSize = new System.Drawing.Size(360, 270);
             this.Name = "FormAddDepartment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавление подразделения";
@@ -119,9 +122,9 @@
 
         private System.Windows.Forms.Button buttonAddDepartment;
         private System.Windows.Forms.TextBox textBoxDepartmentName;
-        private System.Windows.Forms.TextBox textBoxParentDepartmentName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonCansel;
+        private System.Windows.Forms.ComboBox comboBoxParentDepartmentName;
     }
 }

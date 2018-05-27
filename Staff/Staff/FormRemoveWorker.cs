@@ -31,12 +31,12 @@ namespace Staff
             this.controller = controller;
             this.mainView = mainView;
 
-            WorkerProperties worker = mainView.getSelectedWorker();
+            Workers worker = mainView.getSelectedWorker();
             if(worker!=null)
             {
-                textBoxIndividualTaxNumber.Text = worker.getIndividualTaxNumber();
-                textBoxFullName.Text = worker.getFullName();
-                textBoxDepartmentWorker.Text = worker.getDepartmentWorker();
+                textBoxIndividualTaxNumber.Text = worker.individualTaxNumber;
+                textBoxFullName.Text = worker.fullName;
+                textBoxDepartmentWorker.Text = worker.department;
             }
         }
 
@@ -46,31 +46,10 @@ namespace Staff
             string individualTaxNumber = textBoxIndividualTaxNumber.Text;
             string department = textBoxDepartmentWorker.Text;
 
-            //Поля И.Н.Н. работника и название его подразделения не могут быть пустыми
-            if (individualTaxNumber == "") { MessageBox.Show("Введите индивидуальный налоговый номер"); return; }
-            if (department == "") { MessageBox.Show("Введите название подразделения"); return; }
-
-            //проверка - существует ли указанное подразделение
-            TypeResult typeResult = controller.isDepartmentExist(department);
-            if (typeResult == TypeResult.negativeResult)
-            {
-                MessageBox.Show("Подразделения с таким названием не существует");
-                return;
-            }
-            else if (typeResult == TypeResult.exceptionResult) return;
-
-            //проверка - существует ли указанный работник
-            typeResult = controller.isWorkerExist(individualTaxNumber);
-            if (typeResult == TypeResult.negativeResult)
-            {
-                MessageBox.Show("Сотрудник с данным И.Н.Н. уже не работает в этом подразделении");
-                return;
-            }
-            else if (typeResult == TypeResult.exceptionResult) return;
-
-            //удаление работника
-            TypeResult result = controller.removeWorker(individualTaxNumber, department);
-            if (result == TypeResult.exceptionResult) return;
+            //Удаление работника с указанным И.Н.Н.
+            bool result = controller.RemoveWorker(individualTaxNumber);
+            //Если не получилось - пробуем еще раз
+            if (result == false) return;
 
             //Перезагрузка таблицы работников
             mainView.refreshTableWorkers();

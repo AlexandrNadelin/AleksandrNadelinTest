@@ -42,14 +42,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxIndividualTaxNumber = new System.Windows.Forms.TextBox();
             this.buttonEditWorker = new System.Windows.Forms.Button();
-            this.textBoxNewDepartmentWorker = new System.Windows.Forms.TextBox();
             this.textBoxNewEmail = new System.Windows.Forms.TextBox();
             this.textBoxNewPhoneNumber = new System.Windows.Forms.TextBox();
-            this.textBoxNewPositionWorker = new System.Windows.Forms.TextBox();
             this.textBoxNewFullName = new System.Windows.Forms.TextBox();
             this.textBoxNewIndividualTaxNumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxNewPositionWorker = new System.Windows.Forms.ComboBox();
+            this.comboBoxNewDepartmentWorker = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label4
@@ -67,6 +67,7 @@
             this.textBoxDepartmentWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxDepartmentWorker.Location = new System.Drawing.Point(176, 214);
             this.textBoxDepartmentWorker.Name = "textBoxDepartmentWorker";
+            this.textBoxDepartmentWorker.ReadOnly = true;
             this.textBoxDepartmentWorker.Size = new System.Drawing.Size(323, 26);
             this.textBoxDepartmentWorker.TabIndex = 36;
             // 
@@ -85,6 +86,7 @@
             this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxEmail.Location = new System.Drawing.Point(176, 179);
             this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.ReadOnly = true;
             this.textBoxEmail.Size = new System.Drawing.Size(323, 26);
             this.textBoxEmail.TabIndex = 34;
             // 
@@ -103,6 +105,7 @@
             this.textBoxPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPhoneNumber.Location = new System.Drawing.Point(176, 145);
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
+            this.textBoxPhoneNumber.ReadOnly = true;
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(323, 26);
             this.textBoxPhoneNumber.TabIndex = 32;
             // 
@@ -121,6 +124,7 @@
             this.textBoxPositionWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPositionWorker.Location = new System.Drawing.Point(176, 110);
             this.textBoxPositionWorker.Name = "textBoxPositionWorker";
+            this.textBoxPositionWorker.ReadOnly = true;
             this.textBoxPositionWorker.Size = new System.Drawing.Size(323, 26);
             this.textBoxPositionWorker.TabIndex = 30;
             // 
@@ -139,13 +143,14 @@
             this.textBoxFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxFullName.Location = new System.Drawing.Point(176, 75);
             this.textBoxFullName.Name = "textBoxFullName";
+            this.textBoxFullName.ReadOnly = true;
             this.textBoxFullName.Size = new System.Drawing.Size(323, 26);
             this.textBoxFullName.TabIndex = 28;
             // 
             // buttonCansel
             // 
             this.buttonCansel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCansel.Location = new System.Drawing.Point(483, 297);
+            this.buttonCansel.Location = new System.Drawing.Point(535, 275);
             this.buttonCansel.Name = "buttonCansel";
             this.buttonCansel.Size = new System.Drawing.Size(150, 29);
             this.buttonCansel.TabIndex = 27;
@@ -168,27 +173,20 @@
             this.textBoxIndividualTaxNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxIndividualTaxNumber.Location = new System.Drawing.Point(176, 41);
             this.textBoxIndividualTaxNumber.Name = "textBoxIndividualTaxNumber";
+            this.textBoxIndividualTaxNumber.ReadOnly = true;
             this.textBoxIndividualTaxNumber.Size = new System.Drawing.Size(323, 26);
             this.textBoxIndividualTaxNumber.TabIndex = 25;
             // 
             // buttonEditWorker
             // 
             this.buttonEditWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonEditWorker.Location = new System.Drawing.Point(108, 297);
+            this.buttonEditWorker.Location = new System.Drawing.Point(176, 275);
             this.buttonEditWorker.Name = "buttonEditWorker";
             this.buttonEditWorker.Size = new System.Drawing.Size(150, 29);
             this.buttonEditWorker.TabIndex = 24;
             this.buttonEditWorker.Text = "Изменить данные";
             this.buttonEditWorker.UseVisualStyleBackColor = true;
             this.buttonEditWorker.Click += new System.EventHandler(this.buttonEditWorker_Click);
-            // 
-            // textBoxNewDepartmentWorker
-            // 
-            this.textBoxNewDepartmentWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxNewDepartmentWorker.Location = new System.Drawing.Point(535, 214);
-            this.textBoxNewDepartmentWorker.Name = "textBoxNewDepartmentWorker";
-            this.textBoxNewDepartmentWorker.Size = new System.Drawing.Size(323, 26);
-            this.textBoxNewDepartmentWorker.TabIndex = 50;
             // 
             // textBoxNewEmail
             // 
@@ -205,14 +203,6 @@
             this.textBoxNewPhoneNumber.Name = "textBoxNewPhoneNumber";
             this.textBoxNewPhoneNumber.Size = new System.Drawing.Size(323, 26);
             this.textBoxNewPhoneNumber.TabIndex = 46;
-            // 
-            // textBoxNewPositionWorker
-            // 
-            this.textBoxNewPositionWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxNewPositionWorker.Location = new System.Drawing.Point(535, 110);
-            this.textBoxNewPositionWorker.Name = "textBoxNewPositionWorker";
-            this.textBoxNewPositionWorker.Size = new System.Drawing.Size(323, 26);
-            this.textBoxNewPositionWorker.TabIndex = 44;
             // 
             // textBoxNewFullName
             // 
@@ -250,19 +240,37 @@
             this.label8.TabIndex = 52;
             this.label8.Text = "Новые данные";
             // 
+            // comboBoxNewPositionWorker
+            // 
+            this.comboBoxNewPositionWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxNewPositionWorker.FormattingEnabled = true;
+            this.comboBoxNewPositionWorker.Location = new System.Drawing.Point(535, 110);
+            this.comboBoxNewPositionWorker.Name = "comboBoxNewPositionWorker";
+            this.comboBoxNewPositionWorker.Size = new System.Drawing.Size(323, 28);
+            this.comboBoxNewPositionWorker.TabIndex = 53;
+            // 
+            // comboBoxNewDepartmentWorker
+            // 
+            this.comboBoxNewDepartmentWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxNewDepartmentWorker.FormattingEnabled = true;
+            this.comboBoxNewDepartmentWorker.Location = new System.Drawing.Point(535, 214);
+            this.comboBoxNewDepartmentWorker.Name = "comboBoxNewDepartmentWorker";
+            this.comboBoxNewDepartmentWorker.Size = new System.Drawing.Size(323, 28);
+            this.comboBoxNewDepartmentWorker.TabIndex = 54;
+            // 
             // FormEditWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(884, 349);
+            this.ClientSize = new System.Drawing.Size(884, 312);
             this.ControlBox = false;
+            this.Controls.Add(this.comboBoxNewDepartmentWorker);
+            this.Controls.Add(this.comboBoxNewPositionWorker);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBoxNewDepartmentWorker);
             this.Controls.Add(this.textBoxNewEmail);
             this.Controls.Add(this.textBoxNewPhoneNumber);
-            this.Controls.Add(this.textBoxNewPositionWorker);
             this.Controls.Add(this.textBoxNewFullName);
             this.Controls.Add(this.textBoxNewIndividualTaxNumber);
             this.Controls.Add(this.label4);
@@ -279,6 +287,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxIndividualTaxNumber);
             this.Controls.Add(this.buttonEditWorker);
+            this.MaximumSize = new System.Drawing.Size(900, 350);
+            this.MinimumSize = new System.Drawing.Size(900, 350);
             this.Name = "FormEditWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Редактирование данных работника";
@@ -303,13 +313,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxIndividualTaxNumber;
         private System.Windows.Forms.Button buttonEditWorker;
-        private System.Windows.Forms.TextBox textBoxNewDepartmentWorker;
         private System.Windows.Forms.TextBox textBoxNewEmail;
         private System.Windows.Forms.TextBox textBoxNewPhoneNumber;
-        private System.Windows.Forms.TextBox textBoxNewPositionWorker;
         private System.Windows.Forms.TextBox textBoxNewFullName;
         private System.Windows.Forms.TextBox textBoxNewIndividualTaxNumber;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxNewPositionWorker;
+        private System.Windows.Forms.ComboBox comboBoxNewDepartmentWorker;
     }
 }

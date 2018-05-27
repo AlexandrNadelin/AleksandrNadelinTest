@@ -32,7 +32,14 @@ namespace Staff
             this.controller = controller;
             this.mainView = mainView;
             string selectedNodeText = mainView.getSelectedNodeText();
-            if(selectedNodeText!=null)textBoxParentDepartmentName.Text = mainView.getSelectedNodeText();
+            if(selectedNodeText!=null) comboBoxParentDepartmentName.Text = mainView.getSelectedNodeText();
+
+            comboBoxParentDepartmentName.Items.Add("");
+            HashSet<string> set = controller.GetAllDepartments();
+            foreach(string str in set)
+            {
+                comboBoxParentDepartmentName.Items.Add(str);
+            }
         }
 
         //Метод вызывается при нажатии на кнопку добавить подразделение
@@ -41,28 +48,14 @@ namespace Staff
             //текстовое поле названия подразделения не должно быть пустым
             if (textBoxDepartmentName.Text.Equals(""))
             {
-                MessageBox.Show("Введите название отдела");
+                MessageBox.Show("Введите название подразделения");
                 return;
             }
 
-            //проверка - существует ли подразделение с таким же названием (По ТЗ не должно)
-            TypeResult typeResult = controller.isDepartmentExist(textBoxDepartmentName.Text);
-            if (typeResult == TypeResult.positiveResult)
-            {
-                MessageBox.Show("Подразделение с таким названием уже существует");
-                return;
-            }
-            else if (typeResult == TypeResult.exceptionResult) return;
-
-            //Текстовое поле названия родительского подразделения должно быть пустым если создается фирма. В этом случае название фирмы помещается в корневой каталог
-            if (textBoxParentDepartmentName.Text.Equals(""))
-            {
-                if(!controller.addDepartment("root", textBoxDepartmentName.Text))return;
-            }
-            else//В противном случае создается подразделение. родительским для которого является подразделение указанное в соответствующем текстовом поле
-            {
-                if(!controller.addDepartment(textBoxParentDepartmentName.Text, textBoxDepartmentName.Text))return;
-            }
+            //Добавление подразделения
+            bool result = controller.AddDepartment(textBoxDepartmentName.Text, comboBoxParentDepartmentName.Text == "" ? null : comboBoxParentDepartmentName.Text);
+            //Если не получилось можно попробовать опять
+            if (result == false) return;
 
             //Перезагрузка дерева подразделений
             mainView.refreshTreeView();

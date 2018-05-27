@@ -32,30 +32,27 @@ namespace Staff
             this.controller = controller;
             this.mainView = mainView;
             string selectedNodeText = mainView.getSelectedNodeText();
-            if (selectedNodeText != null) textBoxDepartmentName.Text = mainView.getSelectedNodeText();
+            if (selectedNodeText != null) comboBoxDepartmentName.Text = mainView.getSelectedNodeText();
+            
+            HashSet<string> list = controller.GetAllDepartments();
+            foreach (string str in list)
+            {
+                comboBoxDepartmentName.Items.Add(str);
+            }
         }
 
         //Метод вызывается при нажатии на кнопку удалить подразделение
         private void buttonRemoveDepartment_Click(object sender, EventArgs e)
         {
             //Текстовое поле удаляемого подразделения не должно быть пустым
-            if (textBoxDepartmentName.Text.Equals(""))
+            if (comboBoxDepartmentName.Text.Equals(""))
             {
                 MessageBox.Show("Введите название отдела");
                 return;
             }
 
-            //Проверка - существует ли подразделение с данным названием
-            TypeResult typeResult = controller.isDepartmentExist(textBoxDepartmentName.Text);
-            if (typeResult == TypeResult.negativeResult)
-            {
-                MessageBox.Show("Подразделения с таким названием не существует");
-                return;
-            }
-            else if (typeResult == TypeResult.exceptionResult) return;
-
-            //Удаление подразделения
-            controller.removeDepartment(textBoxDepartmentName.Text);
+            bool result = controller.RemoveDepartment(comboBoxDepartmentName.Text);
+            if (result == false) return;
 
             //Перезагрузка дерева подразделений
             mainView.refreshTreeView();

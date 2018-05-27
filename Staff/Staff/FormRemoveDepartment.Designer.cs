@@ -30,8 +30,8 @@
         {
             this.buttonCansel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxDepartmentName = new System.Windows.Forms.TextBox();
             this.buttonRemoveDepartment = new System.Windows.Forms.Button();
+            this.comboBoxDepartmentName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonCansel
@@ -55,14 +55,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Название подразделения";
             // 
-            // textBoxDepartmentName
-            // 
-            this.textBoxDepartmentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxDepartmentName.Location = new System.Drawing.Point(11, 47);
-            this.textBoxDepartmentName.Name = "textBoxDepartmentName";
-            this.textBoxDepartmentName.Size = new System.Drawing.Size(323, 26);
-            this.textBoxDepartmentName.TabIndex = 9;
-            // 
             // buttonRemoveDepartment
             // 
             this.buttonRemoveDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -74,6 +66,15 @@
             this.buttonRemoveDepartment.UseVisualStyleBackColor = true;
             this.buttonRemoveDepartment.Click += new System.EventHandler(this.buttonRemoveDepartment_Click);
             // 
+            // comboBoxDepartmentName
+            // 
+            this.comboBoxDepartmentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxDepartmentName.FormattingEnabled = true;
+            this.comboBoxDepartmentName.Location = new System.Drawing.Point(11, 53);
+            this.comboBoxDepartmentName.Name = "comboBoxDepartmentName";
+            this.comboBoxDepartmentName.Size = new System.Drawing.Size(323, 28);
+            this.comboBoxDepartmentName.TabIndex = 14;
+            // 
             // FormRemoveDepartment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,10 +82,12 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(344, 134);
             this.ControlBox = false;
+            this.Controls.Add(this.comboBoxDepartmentName);
             this.Controls.Add(this.buttonCansel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxDepartmentName);
             this.Controls.Add(this.buttonRemoveDepartment);
+            this.MaximumSize = new System.Drawing.Size(360, 172);
+            this.MinimumSize = new System.Drawing.Size(360, 172);
             this.Name = "FormRemoveDepartment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Удаление подразделения";
@@ -97,7 +100,7 @@
 
         private System.Windows.Forms.Button buttonCansel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxDepartmentName;
         private System.Windows.Forms.Button buttonRemoveDepartment;
+        private System.Windows.Forms.ComboBox comboBoxDepartmentName;
     }
 }

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinqToSqlStaffdbml">
+  <DataContextMoniker Name="/LinqToSqlStaffdbmlDataContext" />
+  <nestedChildShapes>
+    <classShape Id="06ed059c-181f-4b3d-accb-5efb0eaf0827" absoluteBounds="1.25, 2.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LinqToSqlStaffdbmlDataContext/Departments" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b3e1559-a192-433a-96e3-a5c7c7e6a5cb" absoluteBounds="1.2650000000000001, 2.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29017d75-091d-423e-92fb-1e98f7f0cefb" absoluteBounds="4.875, 2.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/LinqToSqlStaffdbmlDataContext/Workers" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75779f16-bad9-4ea8-8601-02c310f2dda6" absoluteBounds="4.89, 2.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

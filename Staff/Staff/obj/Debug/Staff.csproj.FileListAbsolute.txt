@@ -13,7 +13,6 @@ D:\Проэкты\Staff\Staff\obj\Debug\Staff.pdb
 D:\Проэкты\Staff\Staff\bin\Debug\Staff.exe
 D:\Проэкты\Staff\Staff\bin\Debug\Staff.pdb
 D:\Проэкты\Staff\Staff\obj\Debug\Staff.csprojResolveAssemblyReference.cache
-D:\Проэкты\Staff\Staff\obj\Debug\Staff.Form1.resources
 D:\Проэкты\Staff\Staff\obj\Debug\Staff.Properties.Resources.resources
 D:\Проэкты\Staff\Staff\obj\Debug\Staff.csproj.GenerateResource.Cache
 D:\Проэкты\Staff\Staff\obj\Debug\Staff.FormAddDepartment.resources
@@ -28,3 +27,52 @@ D:\Проэкты\Staff\Staff\obj\Debug\Staff.FormEditWorker.resources
 D:\Projects\Staff\Staff\Staff\obj\Debug\Staff.FormAddWorker.resources
 D:\Projects\Staff\Staff\Staff\obj\Debug\Staff.FormEditWorker.resources
 D:\Projects\Staff\Staff\Staff\obj\Debug\Staff.FormRemoveWorker.resources
+D:\Проэкты\Staff\Staff\obj\Debug\Staff.FormMain.resources
+D:\Проэкты\Staff 2\Staff\bin\Debug\Staff.exe.config
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.exe
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.pdb
+D:\Проэкты\Staff 2\Staff\bin\Debug\Staff.exe
+D:\Проэкты\Staff 2\Staff\bin\Debug\Staff.pdb
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.csprojResolveAssemblyReference.cache
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.FormMain.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.FormAddDepartment.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.FormAddWorker.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.FormEditDepartment.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.FormEditWorker.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.FormRemoveDepartment.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.FormRemoveWorker.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.Properties.Resources.resources
+D:\Проэкты\Staff 2\Staff\obj\Debug\Staff.csproj.GenerateResource.Cache
+D:\Projects\Staff 2\Staff\bin\Debug\Staff.exe.config
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.exe
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.pdb
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.csprojResolveAssemblyReference.cache
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.FormMain.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.FormAddDepartment.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.FormAddWorker.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.FormEditDepartment.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.FormEditWorker.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.FormRemoveDepartment.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.FormRemoveWorker.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.Properties.Resources.resources
+D:\Projects\Staff 2\Staff\obj\Debug\Staff.csproj.GenerateResource.Cache
+D:\Projects\Staff 2\Staff\bin\Debug\Staff.exe
+D:\Projects\Staff 2\Staff\bin\Debug\Staff.pdb
+D:\Projects\Staff 2 - копия\Staff\bin\Debug\Staff.exe.config
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.exe
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.pdb
+D:\Projects\Staff 2 - копия\Staff\bin\Debug\Staff.exe
+D:\Projects\Staff 2 - копия\Staff\bin\Debug\Staff.pdb
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.csprojResolveAssemblyReference.cache
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.FormMain.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.FormAddDepartment.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.FormAddWorker.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.FormEditDepartment.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.FormEditWorker.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.FormRemoveDepartment.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.FormRemoveWorker.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.Properties.Resources.resources
+D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.csproj.GenerateResource.Cache
+D:\GitPro\Test\Staff\Staff\bin\Debug\Staff.exe.config
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.exe
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.pdb

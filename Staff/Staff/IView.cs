@@ -18,7 +18,7 @@ namespace Staff
         string getSelectedNodeText();
 
         //Передает данные выбранного работника из таблицы работников
-        WorkerProperties getSelectedWorker();
+        Workers getSelectedWorker();
 
         //Выводит сообщение на экран
         void showMessage(string message);
