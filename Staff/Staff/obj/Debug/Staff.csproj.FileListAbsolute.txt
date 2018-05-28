@@ -76,3 +76,15 @@ D:\Projects\Staff 2 - копия\Staff\obj\Debug\Staff.csproj.GenerateResource.C
 D:\GitPro\Test\Staff\Staff\bin\Debug\Staff.exe.config
 D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.exe
 D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.pdb
+D:\GitPro\Test\Staff\Staff\bin\Debug\Staff.exe
+D:\GitPro\Test\Staff\Staff\bin\Debug\Staff.pdb
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.csprojResolveAssemblyReference.cache
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.FormMain.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.FormAddDepartment.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.FormAddWorker.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.FormEditDepartment.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.FormEditWorker.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.FormRemoveDepartment.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.FormRemoveWorker.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.Properties.Resources.resources
+D:\GitPro\Test\Staff\Staff\obj\Debug\Staff.csproj.GenerateResource.Cache

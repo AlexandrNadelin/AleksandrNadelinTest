@@ -61,6 +61,7 @@
             this.ColumnDepartment});
             this.dataGridViewWorkers.Location = new System.Drawing.Point(315, 12);
             this.dataGridViewWorkers.Name = "dataGridViewWorkers";
+            this.dataGridViewWorkers.ReadOnly = true;
             this.dataGridViewWorkers.RowHeadersVisible = false;
             this.dataGridViewWorkers.Size = new System.Drawing.Size(609, 430);
             this.dataGridViewWorkers.TabIndex = 11;
@@ -69,31 +70,37 @@
             // 
             this.ColumnIndividualTaxNumber.HeaderText = "И.Н.Н.";
             this.ColumnIndividualTaxNumber.Name = "ColumnIndividualTaxNumber";
+            this.ColumnIndividualTaxNumber.ReadOnly = true;
             // 
             // ColumnFullName
             // 
             this.ColumnFullName.HeaderText = "Ф.И.О.";
             this.ColumnFullName.Name = "ColumnFullName";
+            this.ColumnFullName.ReadOnly = true;
             // 
             // ColumnPositionWorker
             // 
             this.ColumnPositionWorker.HeaderText = "Должность";
             this.ColumnPositionWorker.Name = "ColumnPositionWorker";
+            this.ColumnPositionWorker.ReadOnly = true;
             // 
             // ColumnPhoneNumber
             // 
             this.ColumnPhoneNumber.HeaderText = "Номер телефона";
             this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
+            this.ColumnPhoneNumber.ReadOnly = true;
             // 
             // ColumnEMail
             // 
             this.ColumnEMail.HeaderText = "email";
             this.ColumnEMail.Name = "ColumnEMail";
+            this.ColumnEMail.ReadOnly = true;
             // 
             // ColumnDepartment
             // 
             this.ColumnDepartment.HeaderText = "Подразделение";
             this.ColumnDepartment.Name = "ColumnDepartment";
+            this.ColumnDepartment.ReadOnly = true;
             // 
             // buttonAddWorker
             // 
